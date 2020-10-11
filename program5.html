@@ -1,0 +1,60 @@
+1.
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml/">
+<head><title>Fibonacci Series</title>
+</head>
+<body bgcolor="yellow">
+<h3 style="text-align:center;color:red"> Program to generate first n fibonacci numbers </h3>
+<script type="text/javascript">
+var limit = prompt("Enter the number");
+var f1=0;
+var f2=1;
+document.write("<h3>The limit entered is: </h3>",limit,"<br/>");
+document.write("<h3>The fibonacci series is: </h3> <br/>");
+if(limit == 1)
+{
+document.write("",f1,"<br/>");
+}
+if(limit == 2)
+{
+document.write("",f1,"<br/>");
+document.write("",f2,"<br/>");
+}
+if(limit > 2)
+{
+document.write("",f1,"<br/>");
+document.write("",f2,"<br/>");
+for(i=2;i<limit;i++)
+{ 
+f3 = f2+f1;
+document.write("",f3,"<br/>");
+f1=f2;
+f2=f3;
+}
+}
+</script>
+</body>
+</html> 
+
+2.
+<?xml version ="1.0" encoding = "utf-8?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> square.html </title>
+</head>
+<body style="background-color:yellow">
+<h3 style="text-align:center;color:red"> Program to generate a table
+of numbers from 1 to n and their squares using alert</h3>
+<script type="text/javascript" >
+var n= prompt("Enter the limit 'n' to generate the table of numbers from 1 to n:","");
+var msg = ""; 
+var res = "0";
+for(var x = 1; x <= n; x++)
+{
+res = x * x;
+msg = msg + " "+ x + " * "+ x + " = " + res + "\n";
+}
+alert(msg);
+</script>
+</body>
+</html> 
